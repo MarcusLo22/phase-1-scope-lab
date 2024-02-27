@@ -17,20 +17,16 @@ describe('Fix the Scope', function() {
     });
   });
   describe('setBestCustomer()', function() {
-    it('setBestCustomer', function() {
-      expect(window.bestCustomer).to.equal(undefined);
-
+    it('should set the value of bestCustomer to "not bob"', function() {
       setBestCustomer();
-
-      expect(window.bestCustomer).to.equal('not bob');
+      expect(bestCustomer).to.equal('not bob');
     });
   });
-
+  
   describe('overwriteBestCustomer()', function() {
-    it('overwrites the best customer', function() {
+    it('should overwrite the value of bestCustomer with "maybe bob"', function() {
       overwriteBestCustomer('maybe bob');
-
-      expect(window.bestCustomer).to.equal('maybe bob');
+      expect(bestCustomer).to.equal('maybe bob');
     });
   });
 

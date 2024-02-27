@@ -1,0 +1,101 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-27T05:12:23.543Z",
+    "end": "2024-02-27T05:12:23.731Z",
+    "duration": 188
+  },
+  "tests": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should set the value of bestCustomer to \"not bob\"",
+      "fullTitle": "Fix the Scope setBestCustomer() should set the value of bestCustomer to \"not bob\"",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should overwrite the value of bestCustomer with \"maybe bob\"",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() should overwrite the value of bestCustomer with \"maybe bob\"",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'not bob' to equal 'maybe bob'",
+        "showDiff": true,
+        "actual": "not bob",
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected 'not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:29:31)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "should overwrite the value of bestCustomer with \"maybe bob\"",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() should overwrite the value of bestCustomer with \"maybe bob\"",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'not bob' to equal 'maybe bob'",
+        "showDiff": true,
+        "actual": "not bob",
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected 'not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:29:31)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should set the value of bestCustomer to \"not bob\"",
+      "fullTitle": "Fix the Scope setBestCustomer() should set the value of bestCustomer to \"not bob\"",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
